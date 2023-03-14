@@ -1,0 +1,32 @@
+/* class selector */ 
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  background-color: aqua;
+}
+
+/* tag selector */
+a {
+  padding: 16px;
+  border: 2px solid goldenrod;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  border-color: aqua
+}
+
+/* id selector */
+#maintitle {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff0000;
+  text-align: center;
+}
+
+

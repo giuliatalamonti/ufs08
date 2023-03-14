@@ -1,19 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Your HTML first example</title>
+    <!-- remeber to add the charset definition -->
     <meta charset="utf-8" />
-    <meta charset="ascii" />
-    <!-- <link rel="stylesheet" type="text/css" href="./1-css.css"> -->
+
+    <!-- CSS import types -->
+    <!-- link style internal -->
+    <style>
+      body {
+        border: 3px solid salmon;
+      }
+    </style>
+    <!-- link style from external style sheet -->
+    <link rel="stylesheet" type="text/css" href="./1-css.css">
+
+    <!-- JS import types -->
+    <!-- link script from external js file  -->
+    <script defer src="./1-js.js"></script>
+    <!-- link script internal -->
+    <script>
+      console.log("Hello from the script tag")
+    </script>
 </head>
 <body>
-    <h1>ITS Rizzoli</h1>
+    <h1 id="maintitle">ITS Rizzoli</h1>
     <nav>
-      <a href="#">About</a>
-      <a href="#">Contacts</a>
+      <a id='anchor-1' class='anchor1' href="#">About</a>
+      <a class='anchor1' href="#">Contacts</a>
+      <!-- this is not correct -->
+      <li class="anchor1">Home</li>
     </nav>
-
     <p>Some text</p>
     <!-- charset definition affected section -->
     <span>そうめん</span>
@@ -28,8 +45,10 @@
     </table>
 
     <!-- quicks mode affected section: how browser changes the visualization -->
+    <button type="reset">Hello</button>
     <div style="background-color: cadetblue; font-style:italic; letter-spacing:10px; text-transform:capitalize">
         A styled div
         <table><tr><td>A table in the div</td></tr></table>
-
+      </div>
+    </body>  
 </html>
