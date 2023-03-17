@@ -1,53 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" /> <!-- remember to add the charset definition -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Your HTML first example</title>
-    <!-- CSS import types -->
-    <!-- link style embedded -->
-    <style>
-      body {
-        border: 3px solid salmon;
-      }
-    </style>
-    <!-- link style from external style sheet -->
-    <link rel="stylesheet" type="text/css" href="./1-css.css">
+    <head>
+        <!-- remember to add the charset definition -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
 
-    <!-- JS import types -->
-    <!-- link script from external js file  -->
-    <script defer src="./1-js.js"></script>
-    <!-- link script internal -->
-    <script>
-      console.log("Hello from the script tag")
-    </script>
-</head>
-<body>
-    <h1 id="maintitle">ITS Rizzoli</h1>
-    <nav>
-      <a id='anchor-1' class='anchor1' href="#">About</a>
-      <a class='anchor1' href="#">Contacts</a>
-      <!-- this is not correct -->
-      <li class="anchor1">Home</li>
-    </nav>
-    <p>Some text</p>
-    <!-- charset definition affected section -->
-    <span>そうめん</span>
+        <title>Your HTML first example</title>
+        <!-- CSS import types -->
+        <!-- link style embedded -->
+        <style>
+            body {
+                border: 3px solid salmon;
+            }
+        </style>
+        <!-- link style from external style sheet -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./1-css.css"
+        />
 
-    <table>
-      <th>🍅</th>
-      <th>🍎</th>
-      <tr>
-        <td>1</td>
-        <td>2</td>
-      </tr>
-    </table>
+        <!-- JS import types -->
+        <!-- link script from external js file  -->
+        <script defer src="./1-js.js"></script>
+        <!-- link script internal -->
+        <script>
+            console.log('Hello from the script tag')
+        </script>
+    </head>
+    <body>
+        <h1 id="maintitle">ITS Rizzoli</h1>
+        <nav>
+            <a id="anchor-1" class="anchor1" href="#"
+                >About</a
+            >
+            <a class="anchor1" href="#">Contacts</a>
+            <!-- this is not correct -->
+            <li class="anchor1">Home</li>
+        </nav>
+        <p>Some text</p>
+        <!-- charset definition affected section -->
+        <span>そうめん</span>
 
-    <!-- quicks mode affected section: how browser changes the visualization -->
-    <button type="reset">Hello</button>
-    <div style="background-color: cadetblue; font-style:italic; letter-spacing:10px; text-transform:capitalize">
-        A styled div
-        <table><tr><td>A table in the div</td></tr></table>
-      </div>
-    </body>  
+        <table>
+            <th>🍅</th>
+            <th>🍎</th>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+        </table>
+
+        <!-- quicks mode affected section: how browser changes the visualization -->
+        <button type="reset">Hello</button>
+        <div
+            style="
+                background-color: cadetblue;
+                font-style: italic;
+                letter-spacing: 10px;
+                text-transform: capitalize;
+            "
+        >
+            A styled div
+            <table>
+                <tr>
+                    <td>A table in the div</td>
+                </tr>
+            </table>
+        </div>
+        <a href="#" title="The same page"
+            >Go to the same page</a
+        >
+    </body>
 </html>
