@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.temperatureWrapper {
+    border: 2px solid palevioletred;
+    padding: 24px;
+}
