@@ -22,8 +22,10 @@ else console.log('This is not a fruit')
 const fruit = 'apple'
 
 switch (fruit) {
+  // multiple cases
   case 'apple':
-    console.log('This is an Apple')
+  case 'strawberry':
+    console.log('Those are red fruits')
     break
   case 'banana':
     console.log('This is a Banana')
@@ -42,12 +44,12 @@ switch (fruit) {
 ///////////////////////// TERNARY OPERATOR /////////////////////////
 // In questo caso è più compatto l'uso del ternary operator
 const fuelLevel = 0.5
-let toRefuel
+//let toRefuel
 
-if (fuelLevel < 0.5) {
-  toRefuel = true
-} else {
-  toRefuel = false
-}
+// if (fuelLevel < 0.5) {
+//   toRefuel = true
+// } else {
+//   toRefuel = false
+// }
 
-//const toRefuel = fuelLevel < 0.5 ? true : false
+const toRefuel = fuelLevel < 0.5 ? true : false

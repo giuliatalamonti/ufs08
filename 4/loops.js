@@ -41,6 +41,20 @@ for (const element of string1) {
 ////// for in loop
 // un ciclo for in è un ciclo che itera un oggetto e le sue chiavi
 
+let array3 = ['ciao', 'amici', 'come', 'state']
+
+for (const element of array3) {
+  console.log(element)
+}
+
+// => 'ciao', 'amici', 'come', 'state'
+
+for (const element in array3) {
+  console.log(element)
+}
+
+// => 0, 1, 2, 3
+
 // esempio esercizio esempio 3
 // document.getElementByClassName, restituisce un array-like object precisamente un HTMLCollection
 // per poterla iterare posso sfruttare il for of loop

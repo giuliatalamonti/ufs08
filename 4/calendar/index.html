@@ -8,7 +8,14 @@
     <script defer src="./calendar.js"></script>
     <link rel="stylesheet" href="./calendar.css" />
   </head>
-  <body>
+  <body class="bodyColorLight">
+    <div>
+      <label for="colorpicker">Cambia sfondo</label>
+      <input type="color" value="#ff0000" id="colorpicker" />
+    </div>
+    <div>
+      <button onclick="changeColor(event)">Dark theme</button>
+    </div>
     <select name="months" id="months">
       <option value="january">January</option>
       <option value="february">February</option>
