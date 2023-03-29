@@ -1,5 +1,6 @@
 // Race day registration
-// Here’s how our registration works. There are adult runners (over 18 years of age) and youth runners (under 18 years of age).
+// Let's race!
+// There are adult runners (over 18 years of age) and youth runners (under 18 years of age).
 // Runners are assigned a race number and start time based on their age and registration.
 
 // Race number:
