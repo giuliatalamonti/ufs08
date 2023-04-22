@@ -1,6 +1,6 @@
 # Compito per il 26/04/2023
 
-Realizzate un sito web partendo dal design che trovate nell'immagine homepage.webp
+Realizzate un sito web con HTML e CSS riproducendo il design condiviso dalla immagine homepage.webp
 
 ## Materiale
 
