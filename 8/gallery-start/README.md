@@ -2,6 +2,8 @@
 
 [Un esempio completato](https://mdn.github.io/learning-area/javascript/building-blocks/gallery/)
 
+Le immagini potete scaricarle da [qui](https://www.pexels.com/search/nature/)
+
 0. aggiungi il CSS per visualizzare le immagini della thumbBar
 
 1. cicla le immagini e aggiungile alla thumbBar
