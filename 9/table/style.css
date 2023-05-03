@@ -1,6 +1,6 @@
 /* differenza con CSS display block e display table */
-
-/* table,
+/* 
+table,
 table * {
     display: block;
 } */
@@ -11,11 +11,15 @@ table * {
 table {
     table-layout: fixed;
     width: 100%;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     border: 3px solid purple;
 }
 
 td,
 th {
     border: 2px solid red;
+}
+
+tr:nth-child(even) {
+    background-color: cornflowerblue;
 }
