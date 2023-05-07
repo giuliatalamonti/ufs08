@@ -1,0 +1,8 @@
+.error-message {
+    display: none;
+}
+
+.error-message[data-error] {
+    color: red;
+    display: block;
+}
