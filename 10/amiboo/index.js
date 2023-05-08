@@ -1,42 +1,55 @@
-// const getAmiboo = fetch(
-//     'https://amiiboapi.com/api/amiibo/?character=zelda'
-// )
+function setAmiiboImage(amiibo) {
+    amiibo.forEach((character) => {
+        const img = document.createElement('img')
 
-// getAmiboo
-//     .then((response) => {
-//         return response.json()
-//     })
-//     .then((data) => {
-//         if (data?.amiibo) {
-//             const { amiibo: amiiboElement } = data
-//             // const pippo = data.amiibo - sono equivalenti alla riga 15
-//             setAmibooImages(amiiboElement)
-//         }
-//     })
-//     .catch((error) => {
-//         console.error(error)
-//     })
+        img.src = character.image
+        img.alt = character.name
 
-// async - await
+        document.body.appendChild(img)
+    })
+}
 
-;(async () => {
-    function setAmibooImages(amiibo) {
-        amiibo.forEach((element) => {
-            const imageElement =
-                document.createElement('img')
-            imageElement.src = element.image
-            imageElement.alt = element.name
-            document.body.appendChild(imageElement)
-        })
-    }
-    try {
-        const getAmiboo = await fetch(
-            'https://amiiboapi.com/api/amiibo/?character=zelda'
+document
+    .querySelector('form')
+    .addEventListener('submit', (event) => {
+        event.preventDefault()
+
+        const search = document.querySelector('input').value
+
+        fetch(
+            `https://www.amiiboapi.com/api/amiibo/?character=${search}`
         )
-        const { amiibo } = await getAmiboo.json()
+            .then((response) => {
+                return response.json()
+            })
+            .then((data) => {
+                const { amiibo: amiiboCharacters } = data
+                setAmiiboImage(amiiboCharacters)
+            })
+            .catch((error) => {
+                console.error(error)
+            })
+    })
 
-        setAmibooImages(amiibo)
-    } catch (error) {
-        console.error(error)
-    }
-})()
+// Implementazione con async/await
+//   ;(async () => {
+//     function setAmibooImages(amiibo) {
+//         amiibo.forEach((element) => {
+//             const imageElement =
+//                 document.createElement('img')
+//             imageElement.src = element.image
+//             imageElement.alt = element.name
+//             document.body.appendChild(imageElement)
+//         })
+//     }
+//     try {
+//         const getAmiboo = await fetch(
+//             'https://amiiboapi.com/api/amiibo/?character=zelda'
+//         )
+//         const { amiibo } = await getAmiboo.json()
+
+//         setAmibooImages(amiibo)
+//     } catch (error) {
+//         console.error(error)
+//     }
+// })()
