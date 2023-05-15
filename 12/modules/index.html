@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+
+        <!-- <script src="other-module1.js"></script>
+        <script src="other-module2.js"></script>
+        <script src="my-module.js"></script> -->
+
+        <script type="module" src="my-module.js"></script>
+        <script type="module">
+            import { exportedFunc } from './my-module.js'
+            exportedFunc()
+        </script>
+
+        <!-- <script src="./moment/moment.min.js"></script>
+
+        <script
+            type="module"
+            src="./days-to-christmas.js"
+        ></script> -->
+
+        <title>module example</title>
+    </head>
+    <body>
+        <h1>hello</h1>
+        <!-- Results -->
+        <!-- Hello today is the 14th of May and there are xx days to Christmas 🎅-->
+    </body>
+</html>
