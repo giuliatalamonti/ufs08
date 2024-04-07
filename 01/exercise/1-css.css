@@ -1,0 +1,23 @@
+h1 {
+  color: orangered;
+}
+
+nav {
+  border: 2px solid goldenrod;
+  font-family: serif;
+}
+
+.linkMenu {
+  background-color: blueviolet;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#maintitle {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff0000;
+  text-align: center;
+}
