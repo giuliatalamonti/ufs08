@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+a[href^='#'] {
+  color: rgb(157, 4, 60);
+}
+
+li[class~='linkWrapBig'] {
+  font-weight: 700;
+}
+
+.linkWrap {
+  font-weight: 400;
+}
+
+.linkWrapBig {
+  font-weight: 700;
+}
+
+main > section {
+  border: 2px solid rgb(209, 75, 124);
+}
