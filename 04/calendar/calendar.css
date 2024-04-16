@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 1rem;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 2rem;
+  background-color: aquamarine;
+  margin: 2px;
+  height: 30px;
+  line-height: 0;
+}
