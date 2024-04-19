@@ -1,16 +1,44 @@
 const select = document.querySelector('select')
+
 const list = document.querySelector('#month-view')
+
 const h1 = document.querySelector('h1')
 
-function createCalendar(days, choice) {
-  list.innerHTML = ''
-  h1.textContent = choice
-  // Creare un ciclo for che cicli i giorni del mese
+function resetDays() {
+  while (list.firstChild) {
+    list.removeChild(list.firstChild)
+  }
 }
 
-select.addEventListener('change', function (event) {
-  console.log('Change event fired!', event.target.value)
-})
+function resetDays2() {
+  list.innerHTLM = ''
+}
+
+function onChangeSelect(event) {
+  //console.log('Change event fired!', event.target.value)
+
+  resetDays()
+
+  h1.innerHTML = event.target.value
+
+  if (event.target.value === 'january') {
+    const JanuaryDays = 31
+    for (let i = 1; i <= JanuaryDays; i++) {
+      const day = document.createElement('li')
+
+      console.log('day created', day)
+      day.innerHTML = i
+      list.appendChild(day)
+    }
+  }
+}
+
+select.addEventListener('change', onChangeSelect)
+
+// select.addEventListener('change', function (event) {
+//   console.log(event)
+//   console.log('Change event fired!', event.target.value)
+// })
 
 // createCalendar(31, 'January')
 
