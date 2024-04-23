@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Animal fun facts website</title>
+  </head>
+  <body>
+    <section class="hero">
+      <menu>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#funfacts">Fun Facts</a></li>
+          <li><a href="#fish">Fish</a></li>
+        </ul>
+      </menu>
+      <h1 class="mainTitle">Animals fun facts</h1>
+    </section>
+
+    <section class="animalSection" id="fish">
+      <h2>Fish</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At pariatur, inventore, distinctio
+        totam est earum recusandae illum libero enim voluptatibus et, expedita repudiandae rerum
+        eos. Asperiores veniam esse autem ipsam?
+      </p>
+      <!-- <picture>
+        <source srcset="../picture-example/assets/reef-fish-ras-katy-1200.avif" type="image/avif" />
+        <img src="../picture-example/assets/reef-fish-ras-katy-1200.jpeg" alt="Un pesciolino" />
+      </picture> -->
+      <picture>
+        <source
+          sizes="(min-width: 600px) 100vw, 50vw"
+          srcset="
+            ../picture-example/assets/reef-fish-ras-katy-300.avif   300w,
+            ../picture-example/assets/reef-fish-ras-katy-1200.avif 1200w
+          "
+        />
+        <img src="../picture-example/assets/reef-fish-ras-katy-1200.jpeg" alt="Un pesciolino" />
+      </picture>
+
+      <picture>
+        <source
+          srcset="../picture-example/assets/reef-fish-ras-katy-600.jpeg"
+          media="(min-width: 600px)"
+        />
+        <img src="../picture-example/assets/reef-fish-ras-katy-1200.jpeg" alt="Un pesciolino 2" />
+      </picture>
+    </section>
+    <section class="animalSection"></section>
+  </body>
+</html>
