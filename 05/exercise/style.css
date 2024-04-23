@@ -10,6 +10,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration-line: none;
+}
+
 /* STILE DEGLI ELEMENTI */
 /* a,
 a:hover {
@@ -65,4 +69,19 @@ menu li {
 .hero {
   background: linear-gradient(90deg, #ece2d0, #7fd1b9);
   padding-bottom: calc(32px * 2);
+}
+
+.hero a {
+  color: #7a6563;
+  font-weight: 500;
+}
+
+.hero a:hover {
+  text-decoration: underline;
+  color: #ac7a75;
+  transition: all 1s;
+}
+
+.hero a:visited {
+  color: rgb(255, 169, 10);
 }

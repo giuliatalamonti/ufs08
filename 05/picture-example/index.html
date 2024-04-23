@@ -16,12 +16,20 @@
         sizes="100vw"
         srcset="
           ./assets/reef-fish-ras-katy-1200.avif 1200w,
-          ./assets/reef-fish-ras-katy-600.avif   600w,
-          ./assets/reef-fish-ras-katy-400.avif   400w,
           ./assets/reef-fish-ras-katy-300.avif   300w
         "
       />
       <!-- Setting the height and width is required for lazy loading and to ensure that we can lazyload and to prevent layout shifts. -->
+      <picture>
+        <source
+          sizes="(min-width: 600px) 100vw, 33vw"
+          srcset="
+            ../picture-example/assets/reef-fish-ras-katy-300.jpeg   300w,
+            ../picture-example/assets/reef-fish-ras-katy-1200.jpeg 1200w
+          "
+        />
+        <img src="../picture-example/assets/reef-fish-ras-katy-300.jpeg" alt="gatto" />
+      </picture>
       <img
         alt="Coral reef"
         src="./assets/reef-fish-ras-katy.jpeg"
