@@ -1,6 +1,6 @@
 # Un sito web vetrina
 
-Sviluppate una pagina web di homepage di un sito come da design che trovate nel file: `MiddleExam-1.pdf`
+Sviluppate una pagina web di homepage di un sito come da design che trovate nel file: `MidTerm-1.pdf`
 
 ## Font family
 
