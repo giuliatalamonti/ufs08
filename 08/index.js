@@ -10,12 +10,21 @@ anchor.item(0).addEventListener('click', (event) => {
 })
 
 const form = document.querySelector('form')
+const firstname = document.querySelector('#firstname')
+const lastname = document.querySelector('#lastname')
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault()
+
+  if(!firstname.value && !lastname.value) {
+    alert('Non hai inserito il nome')
+  }
+
+  // Prova dalla pagina a inserire dei valori per firstname e lastname commentando e rimuovendo il commento sulla riga preventDefault()
+  // e.preventDefault()
   console.log('Submitted!')
 })
 
-document.addEventListener('submit', (e) => {
-  console.log('Submit on window')
+window.addEventListener('DOMContentLoaded', () => {
+  console.log('Dom content load')
 })
+
