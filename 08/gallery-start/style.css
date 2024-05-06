@@ -1,0 +1,13 @@
+body {
+ margin: 0 auto;
+
+}
+
+.imagesGallery {
+  display: flex;
+}
+
+.image {
+  width: 20%;
+  display: block;
+}
