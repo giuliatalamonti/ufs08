@@ -11,3 +11,9 @@ body {
   width: 20%;
   display: block;
 }
+
+
+.imagePoster {
+  max-width: 100%;
+  object-fit: cover;
+}
