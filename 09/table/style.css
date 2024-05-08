@@ -8,11 +8,19 @@ table * {
 /* Border collapse */
 
 /* A table-layout value of fixed is generally a good idea to set on your table, as it makes the table behave a bit more predictably by default. Normally, table columns tend to be sized according to how much content they contain, which produces some strange results. With table-layout: fixed, you can size your columns according to the width of their headings, and then deal with their content as appropriate.  */
+
+.wrapper {
+    /* border: 2px solid yellowgreen;
+    border-radius: 4px; */
+}
+
 table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
+    overflow:hidden ;
+    border-radius: 15px;
 }
 
 td,
