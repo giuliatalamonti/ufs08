@@ -3,10 +3,6 @@ html {
   font-family: 'Courier New', Courier, monospace;
 }
 
-/* .wrapper {
-
-}
-
 
 .gridParent {
   display: grid;
@@ -35,10 +31,11 @@ html {
 
 .header {
   grid-area: header;
-} */
+  background-color: green;
+} 
 
 
-.gridParent {
+/* .gridParent {
   display: grid;
   grid-template-columns: repeat(2, minmax(500px, 400px));
   grid-template-rows: 50px 1fr;
@@ -50,4 +47,4 @@ html {
 
 [class^='item'] {
   background-color: cadetblue;
-}
+} */
