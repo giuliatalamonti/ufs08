@@ -20,7 +20,7 @@
     <h1>Lista Amiboo</h1>
 
     <form id="searchForm">
-      <div>
+      <fieldset>
         <label for="search"
           >Ricerca...</label
         >
@@ -31,8 +31,9 @@
           minlength="2"
           maxlength="15"
           required
+          name="searchFormInput"
         />
-      </div>
+      </fieldset>
 
       <button
         class="buttonSubmit"
@@ -41,8 +42,6 @@
         Cerca il tuo amiboo
       </button>
     </form>
-    <section
-      id="resultSearch"
-    ></section>
+    <ul id="resultSearch"></ul>
   </body>
 </html>

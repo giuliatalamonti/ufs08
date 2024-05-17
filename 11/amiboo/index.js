@@ -17,22 +17,12 @@ searchFormData.addEventListener(
   (event) => {
     event.preventDefault()
 
-    new FormData(searchFormData)
-  }
-)
+    const data = new FormData(
+      searchFormData
+    )
 
-searchFormData.addEventListener(
-  'formdata',
-  (event) => {
-    console.log(event)
-
-    // Convert FormData to an object
-    const data = {}
-    event.formData.forEach(
-      (value, key) => {
-        console.log(3, key, value)
-        data[key] = value
-      }
+    getAmibooByName(
+      data.get('searchFormInput')
     )
   }
 )
@@ -63,8 +53,18 @@ function getAmibooByNameJson(
   fetchResult,
   nodeToSetResult
 ) {
-  console.log(fetchResult)
   fetchResult.json().then((result) => {
-    console.log(2, result)
+    result.amiibo.forEach((amiibo) => {
+      const amiiboSearched =
+        document.createElement('li')
+      amiiboSearched.classList.add(
+        'amiiboElementSearched'
+      )
+      amiiboSearched.innerText =
+        amiibo.character
+      nodeToSetResult.appendChild(
+        amiiboSearched
+      )
+    })
   })
 }
