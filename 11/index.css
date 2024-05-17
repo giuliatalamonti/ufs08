@@ -1,0 +1,48 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  max-width: 300px;
+}
+
+#checkbox:invalid + label  {
+  color: rgb(227, 53, 53);
+}
+
+#email:invalid {
+  border: 2px solid red;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.radioElementWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radioElementWrap input {
+  appearance: none;
+
+  border-radius: 50%;
+
+  width: 24px;
+  height: 24px;
+
+  border: 2px solid #999;
+  margin-right: 5px; 
+  transition: 0.2s all linear;
+}
+
+.radioElementWrap input:checked {
+  border: 6px solid rgb(70, 70, 196);
+}
+
+.rangeWrap {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}

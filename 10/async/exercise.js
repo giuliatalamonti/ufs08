@@ -90,8 +90,6 @@ async function getPokemonList() {
        eleHtml.innerText = pokemon.name
        body.appendChild(eleHtml)
      })
-
-
      return json
   } catch(e) {
     throw new Error(e)
