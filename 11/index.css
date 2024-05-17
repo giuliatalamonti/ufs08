@@ -2,16 +2,26 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  --bg-color: rgb(246, 245, 229);
+  --invalid-color: rgb(227, 53, 53);
+  --checked-color: rgb(70, 70, 196);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
 form {
   max-width: 300px;
 }
 
-#checkbox:invalid + label  {
-  color: rgb(227, 53, 53);
+#checkbox:invalid + label {
+  color: var(--invalid-color);
 }
 
 #email:invalid {
-  border: 2px solid red;
+  border: 2px solid var(--invalid-color);
 }
 
 .radioGroup {
@@ -27,22 +37,44 @@ form {
 .radioElementWrap input {
   appearance: none;
 
-  border-radius: 50%;
+  border-radius: 4px;
+  border-width: 1px;
 
   width: 24px;
   height: 24px;
 
   border: 2px solid #999;
-  margin-right: 5px; 
-  transition: 0.2s all linear;
+  margin-right: 5px;
+  /* transition: 0.5s border ease-in; */
+  position: relative;
+}
+
+.radioElementWrap input:checked::after {
+  content: 'x';
+  font-size: large;
+  font-family: 'Trebuchet MS', sans-serif;
+  display: block;
+  color: rgb(176, 176, 176);
+  line-height: 0;
+  /*  */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .radioElementWrap input:checked {
-  border: 6px solid rgb(70, 70, 196);
+  /* border: 8px solid var(--checked-color); */
+  border: 0;
+  background-color: greenyellow;
 }
 
 .rangeWrap {
   display: flex;
   flex-direction: column;
   padding: 2rem 0;
+}
+
+fieldset:nth-child(3) {
+  border: 3px solid #e2e2e2;
 }

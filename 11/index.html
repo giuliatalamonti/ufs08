@@ -1,68 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="./index.js"></script>
-  <link rel="stylesheet" href="./index.css">
-  <title>Form Example</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Form Example</title>
+  </head>
+  <body>
+    <form id="mix">
+      <fieldset>
+        <input required checked id="checkbox" type="checkbox" />
+        <label for="checkbox">Checkbox Example</label>
+      </fieldset>
 
-  <form id="mix">
-    <fieldset>
-      <input required checked id='checkbox' type="checkbox" />
-      <label for="checkbox">Checkbox Example</label>
-    </fieldset>
+      <fieldset>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+        />
+      </fieldset>
 
-    <fieldset>
-      <label for="email">Email</label>
-      <input type="email" id="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
-    </fieldset>
+      <fieldset>
+        <legend>Scegli il tuo colore preferito</legend>
 
-    <fieldset>
-      <legend>Scegli il tuo colore preferito</legend>
+        <div class="radioElementWrap">
+          <label for="radioGiallo">Giallo</label>
+          <input id="radioGiallo" type="radio" name="color" value="giallo" />
+        </div>
 
-      <div class="radioElementWrap">
-        <label for="radioGiallo">Giallo</label>
-        <input id="radioGiallo" type="radio" name="color" value="giallo">
+        <div class="radioElementWrap">
+          <label for="radioVerde">Verde</label>
+          <input id="radioVerde" type="radio" name="color" value="verde" />
+        </div>
+
+        <div class="radioElementWrap">
+          <label for="radioRosso">Rosso</label>
+          <input id="radioRosso" type="radio" name="color" value="rosso" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <label for="colorPicker">Scegli il colore di sfondo</label>
+        <input type="color" name="colorPicker" id="colorPicker" />
+      </fieldset>
+
+      <!-- <input id="password" type="password" minlength="10" required /> -->
+      <!-- 
+      <textarea name="" id="" cols="30" rows="2"></textarea> -->
+
+      <!-- <select name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select> -->
+
+      <!-- <fieldset>
+        <label for="ice-cream-choice">Choose a flavor:</label>
+        <input
+          list="ice-cream-flavors"
+          id="ice-cream-choice"
+          name="ice-cream-choice"
+        />
+
+        <datalist id="ice-cream-flavors">
+          <option value="Chocolate"></option>
+          <option value="Coconut"></option>
+          <option value="Mint"></option>
+          <option value="Strawberry"></option>
+          <option value="Vanilla"></option>
+        </datalist>
+      </fieldset> -->
+
+      <!-- <input type="time" name="" id="" />
+
+      <input type="date" name="" id="" /> -->
+
+      <div class="rangeWrap">
+        <label for="range">Scegli un valore</label>
+        <input
+          type="range"
+          value="15"
+          min="10"
+          max="20"
+          name="rangeExample"
+          id="range"
+        />
+        <span id="rangeValue"></span>
       </div>
 
-      <div class="radioElementWrap">
-        <label for="radioVerde">Verde</label>
-        <input id='radioVerde' type="radio" name="color" value="verde">
-      </div>
-
-      <div class="radioElementWrap">
-        <label for="radioRosso">Rosso</label>
-        <input id='radioRosso' type="radio" name="color" value="rosso">
-      </div>
-    </fieldset>
-
-    <input type="color" name="" id="">
-
-    <input id="password" type="password" minlength="10" required>
-
-    <textarea name="" id="" cols="30" rows="2"></textarea>
-
-    <select name="" id="">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-    </select>
-
-    <input type="time" name="" id="">
-
-    <input type="date" name="" id="">
-
-    <div class="rangeWrap">
-      <label for="range">Scegli un valore</label>
-      <input type="range" value="15"  min="10" max="20" name="rangeExample" id="range">
-      <span id="rangeValue"></span>
-    </div>
-
-    <button type="submit">Send</button>
-  </form>
-  
-</body>
+      <button type="submit">Send</button>
+    </form>
+  </body>
 </html>
