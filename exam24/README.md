@@ -62,12 +62,28 @@ Esempio di chiamata che vi restituirà i prossimi eventi per gli artisti elencat
 
 ```js
 const artist = 'Mika'
-fetch(`https://rest.bandsintown.com/artists/${encodeURI(artist)}/events?app_id=1234&date=upcoming`)
+fetch(
+  `https://rest.bandsintown.com/artists/${encodeURI(
+    artist
+  )}/events?app_id=1234&date=upcoming`
+)
+```
+
+## Formattazione data
+
+Utilizzate l'oggetto JS Intl: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat
+
+```js
+const date = new Date(Date.UTC(2020, 11, 20, 3, 23, 16, 738))
+// Results below assume UTC timezone - your results may vary
+
+// Specify default date formatting for language (locale)
+console.log(new Intl.DateTimeFormat('en-US').format(date))
 ```
 
 ## Funzionalità & design
 
-- i bottoni primary (quelli blue elettrico) all'hover devono avere l' effetto di sovraimpressione come qui: https://codepen.io/giuliatalamonti/pen/YzbqpbV
+- i bottoni primary (quelli blue elettrico con effetto del box shadow soft white) all'hover devono avere l' effetto di sovraimpressione come qui: https://codepen.io/giuliatalamonti/pen/YzbqpbV
 
 - i link del footer devono portare correttamente alle pagine social indicate e le informative privacy (https://corp.bandsintown.com/privacy) e cookie alla pagina (https://corp.bandsintown.com/cookie-policy)
 
