@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro component with sign up form</title>
 
-  Learn to code by watching others
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <form id="signup">
+      <label for="firstname">Firstname</label>
+      <input type="text" name="firstname" id="firstname" required />
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+      <label for="lastname">Lastname</label>
+      <input type="text" name="lastname" id="lastname" required />
 
-  Try it free 7 days then $20/mo. thereafter
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        minlength="8"
+        required
+      />
 
-  Claim your free trial 
+      <button class="btn" type="submit">Claim for free trial</button>
+    </form>
 
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <div id="okMsg"></div>
+  </body>
 </html>
