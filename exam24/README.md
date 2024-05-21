@@ -89,6 +89,22 @@ console.log(new Intl.DateTimeFormat('en-US').format(date))
 
 ## Bonus nella realizzazione
 
-- l'input di ricerca non effettuerà la ricerca tra i vari eventi, ma deve essere correttamente impostato come un input con una serie di opzioni di alcune città da cui poter filtrare tramite un elemento <datalist>
+- l'input di ricerca non effettuerà la ricerca tra i vari eventi, ma deve essere correttamente impostato come un input con una serie di opzioni di alcune città da cui poter filtrare tramite un elemento <datalist>.
+  Il datalist deve avere queste opzioni nel cerca:
+- Milano
+- Parigi
+- Miami
+- Roma
+- Copenaghen
+- Berlino
+- Barcellona
+- Madrid
+- Londra
+- New York
+- Mosca
+- Torino
+- Monaco
+- Atene
+- Praga
 
 - Gestione in mobile del menù hamburger, in modo che al click o touch dell'icona di menù si apra il menù di navigazione a tutto schermo con i link e i tasti di login e signup
