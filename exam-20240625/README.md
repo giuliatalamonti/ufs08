@@ -6,7 +6,7 @@ Il compito consiste nella realizzazione di una homepage tramite HTML, CSS e Java
 
 Avete a disposizione il design della pagina in formato desktop, che trovare nella cartella `design`
 
--   design-desktop.png
+- design-desktop.png
 
 ### Font
 
@@ -15,16 +15,16 @@ Il font del titolo principale è: [Sarina](https://fonts.google.com/specimen/Sar
 
 Pesi da utilizzare:
 
--   400
--   500
--   600
+- 400
+- 500
+- 600
 
 ### Palette colori
 
--  #FFFFFF (white)
--  #000000 (black)
--  #545454 (neutral-black)
--  #FFEDC0 (sfondo)
+- #FFFFFF (white)
+- #000000 (black)
+- #545454 (neutral-black)
+- #FFEDC0 (sfondo)
 
 ## Informazioni e immagini delle opere d'arte
 
@@ -36,16 +36,16 @@ fetch(`https://api.artic.edu/api/v1/artworks/${idArtwork}`)
 
 Le informazioni da recuperare sono:
 
--   immagine dell'opera d'arte (`image_id` vedi sezione apposita URL img opere d'arte)
--   nome dell'opera d'arte (`title`)
--   nome dell'artista (`artist_title`)
+- immagine dell'opera d'arte (`image_id` vedi sezione apposita URL img opere d'arte)
+- nome dell'opera d'arte (`title`)
+- nome dell'artista (`artist_title`)
 
 Gli ID delle opere d'arte di cui recuperare le informazioni sono:
 
--   190563
--   51719
--   78503
--   16858
+- 14006 (gatto sull'albero)
+- 51719
+- 16858
+- 13914
 
 ## URL img opere d'arte
 
@@ -57,7 +57,7 @@ Di seguito un esempio:
 <!-- Esempio di url di una immagine di un'opera d'arte -->
 <!-- 63f49f6d-020e-1d54-d11d-ed027d5e1bd8 è l'image_id -->
 <img
-    src="https://www.artic.edu/iiif/2/63f49f6d-020e-1d54-d11d-ed027d5e1bd8/full/300,/0/default.jpg"
+  src="https://www.artic.edu/iiif/2/63f49f6d-020e-1d54-d11d-ed027d5e1bd8/full/300,/0/default.jpg"
 />
 ```
 
@@ -73,22 +73,23 @@ https://www.artic.edu/iiif/2/{identifier}/{region}/{size}/{rotation}/{quality}.{
 
 #### Documentazione API
 
--   [Per le immagini delle opere d'arte](https://api.artic.edu/docs/#iiif-image-api)
--   [Documentazione della API delle opere d'arte](https://api.artic.edu/docs/#quick-start)
+- [Per le immagini delle opere d'arte](https://api.artic.edu/docs/#iiif-image-api)
+- [Documentazione della API delle opere d'arte](https://api.artic.edu/docs/#quick-start)
 
 **Tip**
 Per le immagini sfruttate la proprietà CSS `object-fit` in modo da poter otterere le proporzioni corrette.
 
 ### Button Find out more
-Il tasto `Find out more` al click deve aprire un alert contenente questo messaggio: 
-"Become a Member today or purchase the perfect gift for someone special. The offer is valid until <DATA_DI_OGGI + 10 GIORNI>" 
 
-La data di scadenza della offerta devi quindi essere calcolato tramite Javascript prendendo la data di oggi e aggiungendo 10 giorni. 
+Il tasto `Find out more` al click deve aprire un alert contenente questo messaggio:
+"Become a Member today or purchase the perfect gift for someone special. The offer is valid until <DATA_DI_OGGI + 10 GIORNI>"
+
+La data di scadenza della offerta devi quindi essere calcolato tramite Javascript prendendo la data di oggi e aggiungendo 10 giorni.
 Formattare in formato italiano la data (usa il costruttore Intl).
 
 ## Bonus nella realizzazione
 
--   Applicare nelle prime tre immagini una animazione al momento dell'hover del cursore sulla stessa, creando (potete vedere un esempio nella terza immagine del design fornitovi) un'ombra solida.
+- Applicare nelle prime tre immagini una animazione al momento dell'hover del cursore sulla stessa, creando (potete vedere un esempio nella terza immagine del design fornitovi) un'ombra solida.
 
 Un esempio:
 
