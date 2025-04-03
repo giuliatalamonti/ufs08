@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List example</title>
+  <style>
+    * {
+      font-size: xx-large;
+      box-sizing: border-box;
+    }
+
+    nav {
+      background-color: palegoldenrod;
+      padding: 48px 0;
+    }
+
+    menu li {
+      display: inline;
+    }
+
+    header {
+      background-color: aqua;
+      padding: 48px 0;
+    }
+
+    main {
+      background-color:burlywood;
+      padding: 48px 0;
+    }
+
+    footer {
+      background-color:khaki;
+      padding: 48px 0;
+    }
+
+    .placeholder {
+      width: 400px;
+      height: 200px;
+      border: 2px dashed blueviolet;
+      padding: 24px;
+    }
+
+    #courses {
+      padding: 8px;
+      background-color: azure;
+    }
+
+    #articles {
+      border: 2px solid black;
+    }
+
+    section ~ section {
+      margin-top: 96px;
+    }
+
+    nav a {
+      border: 3px solid plum;
+    }
+
+    a[href^="#"] {
+      font-size: 128px;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <menu>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+      <li><a href="#cources">Courses</a></li>
+      <li><a href="https://google.com">Google</a></li>
+    </menu>
+  </nav>
+  <header>
+    Title 
+    <button>Call to action</button>
+  </header>
+  <main>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ad, modi, laboriosam quis maiores, a assumenda itaque doloremque reprehenderit vitae accusantium voluptates fugiat? Distinctio dolore iure ad hic, voluptates velit?</p>
+    <!-- section courses -->
+    <section id="courses">
+      <dl>
+        <dt>Software architect</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae totam unde fugit doloribus aliquam quis inventore deleniti amet similique fuga officiis, odio labore quidem eligendi rerum ipsa nulla asperiores? Dolores?</dd>
+        <dt>Cybersecurity</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis necessitatibus placeat, ullam odit incidunt cum obcaecati quisquam temporibus recusandae in sunt earum repudiandae quam pariatur! Sunt minima quidem repellat aut!</dd>
+        <dt>Omni channel</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aperiam eius atque, molestias velit debitis consequatur sunt, quos minima facilis saepe dolore eum officiis id. Possimus fugiat corporis reprehenderit nam.</dd>
+      </dl>
+    </section>
+
+    <p>Another stuff</p>
+    <section id="articles">
+      <article> 
+        <h3>Article title 1</h3>
+        <div class="placeholder">
+          Hello
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sapiente est iusto veritatis a esse iure mollitia, error, rerum laborum laudantium eius, dicta adipisci at autem! Ipsa veritatis odit maxime!
+      </article>
+      <article> 
+        <h3>Article title 2</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sapiente est iusto veritatis a esse iure mollitia, error, rerum laborum laudantium eius, dicta adipisci at autem! Ipsa veritatis odit maxime!
+      </article>
+    </section>
+    
+  </main>
+  <footer>
+    <span>Contacts</span>
+    <ul>
+      <li><a href="#">Contacts</a>
+      </li>
+      <li><a href="#">Piva 00000000</a>
+      </li>
+    </ul>
+  </footer>
+
+  
+</body>
+</html>
