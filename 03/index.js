@@ -61,3 +61,11 @@ console.log(strResult)
 console.log(strResult2)
 
 document.getElementById('example-string').innerText = strResult2
+
+// Dichiarazione di una funzione in javascript
+
+function convertToF(tempC) {
+  return (tempC * 9) / 5 + 32
+}
+
+const tempF = convertToF(MilanCelsius)
