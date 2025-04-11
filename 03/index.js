@@ -31,8 +31,11 @@ document.getElementById('somma').innerText = sumResult
 
 const substractionResult = temp - temp2
 const divideResult = temp / temp2
+const multiplyResult = temp * temp2
 
+document.getElementById('sottrazione').innerText = substractionResult
 document.getElementById('divisione').innerText = divideResult
+document.getElementById('moltiplicazione').innerText = multiplyResult
 
 // Dichiarare un BigInt
 
