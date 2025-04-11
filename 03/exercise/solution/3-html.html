@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./3-css.css" />
+    <script defer src="./3-js.js"></script>
+    <title>Temperature in alcune località</title>
+  </head>
+  <body>
+    <h1>Temperature in alcune località del mondo</h1>
+    <select name="temperatureType" class="temperatureTypeSelect" id="selectTemperature">
+      <option value="celsius">Celsius</option>
+      <option value="kelvin">Kelvin</option>
+      <option value="fahrenheit">Fahrenheit</option>
+    </select>
+    <section>
+      <div id="temperatureItaly" class="temperatureContry">
+        <p class="city">
+          <a href="https://www.ilmeteo.it/meteo/Milano" rel="noopener"><b>Milano</b></a> Italia
+        </br>
+          <span id="temperatureItalyKelvin" class="temperatureKelvin hidden"></span>
+          <span id="temperatureItalyCelsius" class="temperatureCelsius hidden"></span>
+          <span id="temperatureItalyFahrenheit" class="temperatureFahrenheit hidden"></span>
+        </p>
+      </div>
+      <div id="temperatureThailand" class="temperatureContry">
+        <p class="city">
+          <a href="https://www.ilmeteo.it/meteo/Bangkok"><b>Bangkok</b></a> Thailandia
+        </br>
+          <span id="temperatureBangkokKelvin" class="temperatureKelvin hidden"></span>
+          <span id="temperatureBangkokCelsius" class="temperatureCelsius hidden"></span>
+          <span id="temperatureBangkokFahrenheit" class="temperatureFahrenheit hidden"></span>
+        </p>
+      </div>
+      <div id="temperatureUsa" class="temperatureContry">
+        <p class="city">
+          <a href="https://www.ilmeteo.it/meteo-america/Los+Angeles?c=38202"><b>Los Angeles</b></a>
+          USA
+        </br>
+          <span id="temperatureLosAngelesKelvin" class="temperatureKelvin hidden"></span>
+          <span id="temperatureLosAngelesCelsius" class="temperatureCelsius hidden"></span>
+          <span id="temperatureLosAngelesFahrenheit" class="temperatureFahrenheit hidden"></span>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
