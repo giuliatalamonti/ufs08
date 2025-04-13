@@ -1,17 +1,83 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-ul {
-  padding: 1rem;
+ol {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 li {
   list-style-type: none;
-  display: inline-block;
-  padding: 2rem;
-  background-color: aquamarine;
+  padding: 1.5rem;
   margin: 2px;
-  height: 30px;
-  line-height: 0;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+  outline: 1px solid #121212;
+}
+
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.num_wrapper {
+  min-width: 2ch;
+}
+
+.exampleBgImage {
+  background-image: url('https://picsum.photos/800/400');
+  padding: 50px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#month-view {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: calc((1.5rem * 3 * 5) + 2px * 13);
+  margin: 0 auto;
+}
+
+.january > li {
+  background-color: coral;
+}
+
+.february > li {
+  background-color: lightblue;
+}
+.march > li {
+  background-color: lightgreen;
+}
+.april > li {
+  background-color: lightpink;
+}
+.may > li {
+  background-color: lightyellow;
+}
+.june > li {
+  background-color: lightgray;
+}
+.july > li {
+  background-color: lightgoldenrodyellow;
+}
+.august > li {
+  background-color: lightcyan;
+}
+.september > li {
+  background-color: lightcoral;
+}
+.october > li {
+  background-color: lightseagreen;
+}
+.november > li {
+  background-color: lightsteelblue;
+}
+.december > li {
+  background-color: limegreen;
 }

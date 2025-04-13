@@ -4,43 +4,52 @@ const list = document.querySelector('#month-view')
 
 const h1 = document.querySelector('h1')
 
+const months = {
+  january: 31,
+  february: 28,
+  march: 31,
+  april: 30,
+  may: 31,
+  june: 30,
+  july: 31,
+  august: 31,
+  september: 30,
+  october: 31,
+  november: 30,
+  december: 31,
+}
+
 function resetDays() {
   while (list.firstChild) {
     list.removeChild(list.firstChild)
   }
 }
 
-function resetDays2() {
-  list.innerHTLM = ''
-}
+// Initial setup
+setMonth('january')
 
-function onChangeSelect(event) {
-  //console.log('Change event fired!', event.target.value)
-
+function setMonth(month) {
   resetDays()
 
-  h1.innerHTML = event.target.value
+  // h1.innerHTML = month
 
-  if (event.target.value === 'january') {
-    const JanuaryDays = 31
-    for (let i = 1; i <= JanuaryDays; i++) {
-      const day = document.createElement('li')
+  const days = months[month.toLowerCase()]
+  for (let i = 1; i <= days; i++) {
+    const day = document.createElement('li')
 
-      console.log('day created', day)
-      day.innerHTML = i
-      list.appendChild(day)
-    }
+    list.classList = ''
+    list.classList.add(month)
+
+    day.innerHTML = `<div class="num_wrapper">${i}</div>`
+    list.appendChild(day)
   }
 }
 
+function onChangeSelect(event) {
+  setMonth(event.target.value)
+}
+
 select.addEventListener('change', onChangeSelect)
-
-// select.addEventListener('change', function (event) {
-//   console.log(event)
-//   console.log('Change event fired!', event.target.value)
-// })
-
-// createCalendar(31, 'January')
 
 // Tramite l'elemento select scegliete il mese e mostrare i giorni del mese scelto e il nome del mese in testa alla pagina
 // Stilare ogni mese in maniera diversa (es. colori, sfondi, ecc.)
