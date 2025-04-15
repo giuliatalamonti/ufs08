@@ -1,0 +1,87 @@
+/* RESET BROWSER CSS */
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+/* STILE DEGLI ELEMENTI */
+/* a,
+a:hover {
+  color: #2e2e2e;
+}
+
+h1,
+h2 {
+  color: #2e2e2e;
+  font-size: larger;
+  text-align: center;
+}
+/* 
+h1 {
+  font-size: xx-large;
+} */
+
+/* .hero {
+  width: 100%;
+  padding: 120px;
+  background: linear-gradient(#d3d3d3, #b2e4ff);
+  font-weight: 500;
+  margin: 0 auto;
+} */
+
+menu {
+  margin: 32px;
+  margin-top: 0;
+  padding-top: 32px;
+}
+
+menu ul {
+  text-align: center;
+}
+
+menu li {
+  display: inline;
+  /* border: 2px dashed black; */
+  padding: 16px;
+  margin: 0 16px;
+}
+
+#cats:target {
+  background-color: bisque;
+}
+
+.mainTitle {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(90deg, #ece2d0, #7fd1b9);
+  padding-bottom: calc(32px * 2);
+}
+
+.hero a {
+  color: #7a6563;
+  font-weight: 500;
+}
+
+.hero a:hover {
+  text-decoration: underline;
+  color: #ac7a75;
+  transition: all 1s;
+}
+
+.hero a:visited {
+  color: rgb(255, 169, 10);
+}
