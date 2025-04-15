@@ -17,6 +17,8 @@ Per ogni immagine di animale al di sotto dovrà essere presente una lista di fun
 
 Le immagini devono avere la giusta dimensione rispetto la dimensione dello schermo.
 
+Usate questo sito per generare l'asset di immagini: https://just-gimme-an-img.vercel.app/
+
 Quando passiamo con il cursore sopra all'immagine dobbiamo creare un effetto (scegliete da uno di questi effetti https://codepen.io/nxworld/pen/ZYNOBZ)
 
 Il titolo per ogni animale deve essere cliccabile e portare alla pagina di wikipedia corrispettiva dell'animale
