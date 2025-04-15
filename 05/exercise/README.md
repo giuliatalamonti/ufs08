@@ -2,14 +2,14 @@
 
 Costruisci una pagina HTML dove mostrerai una galleria di immagini di alcuni animali:
 
-1. Gatti
-2. Cani
-3. Criceti
-4. Ricci
-5. Pesci
-6. Lucertole
+1. [Bradipi](https://www.wwf.org.uk/learn/fascinating-facts/sloth)
+2. [Koala](http://wwf.org.uk/learn/fascinating-facts/koala)
+3. [Leopardo](https://www.wwf.org.uk/learn/fascinating-facts/snow-leopards)
+4. [Rinoceronte](https://www.wwf.org.uk/learn/fascinating-facts/black-rhino)
+5. [Pinguini](https://www.wwf.org.uk/learn/fascinating-facts/emperor-penguins)
+6. [Castori](https://www.wwf.org.uk/learn/fascinating-facts/beavers)
 
-Qui trovate una lista di curiosità per animale: https://100-facts.com/it/30-fatti-interessanti-sui-criceti/
+Qui trovate una lista di curiosità per animale: https://www.wwf.org.uk/learn/fascinating-facts
 
 Usate per dare stile alla pagina questa palette colori: https://coolors.co/e56399-d3a588-ece2d0-7fd1b9-7a6563
 
@@ -21,5 +21,5 @@ Quando passiamo con il cursore sopra all'immagine dobbiamo creare un effetto (sc
 
 Il titolo per ogni animale deve essere cliccabile e portare alla pagina di wikipedia corrispettiva dell'animale
 
-- se il link sia stato già visitato il colore del titolo non deve cambiare
+- se il link è stato già visitato il colore del titolo non deve cambiare
 - se passiamo con il cursore sopra al link sottolineamo il titolo
