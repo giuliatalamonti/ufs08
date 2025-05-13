@@ -1,0 +1,115 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  font-style: normal;
+
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+
+a {
+  &:hover {
+    color: red;
+    text-decoration: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:active {
+    font-weight: 900;
+  }
+}
+
+a[href^="https"]::after {
+  display: inline-block; 
+  content: " ";
+  width: 10px;
+  height: 10px;
+
+  background-size: 100%;
+  background-image: url("external-link-52.png");
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+
+  & li {
+    padding: 1rem;
+    border: 1px solid black;
+    margin-bottom: 8px;
+  }
+
+  & a {
+    text-decoration: none;
+    color: initial;
+  }
+
+  & a:hover {
+    color: initial;
+  }
+
+  & a:active {
+    font-weight: 300;
+  }
+}
+
+
+/* 
+- Make it so that links are underlined by default, but when you hover or focus them the underline disappears.
+
+- Give the active state a noticeably different styling so it stands out nicely, but make it still fit in with the overall page design.
+Make it so that external links have the external link icon inserted next to them.*/
+
