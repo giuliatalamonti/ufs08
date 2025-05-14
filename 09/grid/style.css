@@ -1,0 +1,29 @@
+body {
+  /* padding: 10rem; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+  "head head"
+  "aside main"
+  "footer footer"
+  ;
+  grid-gap: 10px;
+}
+
+.menu {
+  grid-area: aside;
+}
+
+.content-wrapper {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
