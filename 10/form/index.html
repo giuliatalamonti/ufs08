@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form example</title>
+  <script defer src="./index.js"></script>
+</head>
+<body>
+
+  <form id="signup-form">
+    <fieldset>
+      <label for="firstname">Firstname</label>
+      <input type="text" name="firstname" id="firstname" placeholder="Type your firstname..." required /> 
+    </fieldset>
+
+    <fieldset>
+      <label for="lastname">Lastname</label>
+      <input type="text" name="lastname" id="lastname" placeholder="Type your lastname..." required/> 
+    </fieldset>
+
+    <fieldset>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+    </fieldset>
+
+  <button type="submit">Submit</button>
+
+  </form>
+  
+</body>
+</html>
