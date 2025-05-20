@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Container Query Demo</title>
+  <style>
+    .card-wrapper {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .card {
+      container-type: inline-size;
+      container-name: card;
+      border: 2px solid #444;
+      padding: 1rem;
+      resize: horizontal;
+      overflow: auto;
+      min-width: 200px;
+    }
+
+    .card-content {
+      font-size: 1rem;
+      background-color: lightblue;
+      padding: 1rem;
+      transition: background 0.3s, font-size 0.3s;
+    }
+
+    /* Container Query */
+    @container card (min-width: 300px) {
+      .card-content {
+        background-color: lightgreen;
+        font-size: 1.25rem;
+      }
+    }
+
+    @container card (min-width: 500px) {
+      .card-content {
+        background-color: lightcoral;
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Container Query Demo</h1>
+  <p>Ridimensiona le card trascinando il bordo destro per vedere le differenze.</p>
+
+  <div class="card-wrapper">
+    <div class="card">
+      <div class="card-content">
+        Io cambio colore e dimensione in base alla larghezza della mia card!
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content-2">
+        Io non mi ridimensiono invece
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+@property --x {
+  syntax: '<number>';
+  inherits: false;
+}
+
+:root {
+  --h: 100;
+  --s: 50%;
+  --l: 50%;
+  --a: 1;
+  --x: 0.2;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+
+button {
+  --h: 100;
+  --s: 50%;
+  --l: 50%;
+  --a: 1;
+
+  border: 0; 
+  padding: 1rem;
+  background: hsl(var(--h) var(--s) var(--l) / var(--a));
+
+}
+
+button:hover { /* Change the lightness on hover */
+  --l: 75%;
+}
+
+button:focus { /* Change the saturation on focus */
+  --s: 75%;
+}
+
+button[disabled] {  /* Make look disabled */
+  --s: 0%;
+  --a: 0.5;
+}
+
+#amiibo-result {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.card {
+  
+}
+.card__title {
+
+}
+.card__p {
+
+}
+.card__img {
+  max-width: 100%;
+}

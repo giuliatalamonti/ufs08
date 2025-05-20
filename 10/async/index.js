@@ -59,19 +59,24 @@
 
 // Promise based
 
-// ;(async () => {
-//   async function getChuckNorrisRandomJoke() {
-//     const resultFetch = await fetch(
-//       'https://api.chucknorris.io/jokes/random?category=animal'
-//     )
-//     const randomJoke = await resultFetch.json()
+;(async () => {
+  async function getChuckNorrisRandomJoke() {
+    const resultFetch = await fetch(
+      'https://api.chucknorris.io/jokes/random?category=animal'
+    )
+    const randomJoke = await resultFetch.json()
 
-//     return randomJoke
-//   }
+    return randomJoke
+  }
 
-//   const result = await getChuckNorrisRandomJoke()
-//   console.log(result)
-// })()
+  try {
+    const result = await getChuckNorrisRandomJoke()
+    console.log(result)
+  } catch (e) {
+    console.error(e)
+  }
+})()
+
 const divElm = document.getElementById('amiibo')
 
 const resultFromAPICall = fetch(
@@ -94,4 +99,7 @@ resultFromAPICall
       divElm.append(imgElm)
       divElm.append(pElm)
     })
+  })
+  .catch((error) => {
+    console.error('Error', error)
   })

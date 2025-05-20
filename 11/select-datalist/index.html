@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select vs Datalit</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+      <form id="amiibo-datalist-form">
+        <label for="amiibo-character-selected">Choose an Amiibo character:</label>
+        
+        <input
+          list="amiibo-characters"
+          id="amiibo-character-selected"
+          name="amiibo-character-selected"
+        />
+  
+        <datalist id="amiibo-characters">
+  
+        </datalist>
+        <button type="submit">Show amiibo</button>
+      </form>
+
+
+      <section id="amiibo-result"></section>
+
+
+  </body>
+</html>
