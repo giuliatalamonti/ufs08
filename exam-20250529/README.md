@@ -7,7 +7,7 @@ Solo le invitate speciali — le donne umane vive dell'universo di _Rick and Mor
 
 ## 🎯 Obiettivo
 
-Realizzare un form RSVP per il matrimonio in cui:
+Realizzare un form RSVP per il matrimonio di Unity e Birdperson in cui:
 
 - Solo le **inviate** specifiche possono accedere (ottenute dall’API `https://rickandmortyapi.com/api/character?status=alive&species=human&gender=female`)
 - Gli invitati possono **confermare o rifiutare** la loro presenza
@@ -117,5 +117,6 @@ GET https://rickandmortyapi.com/api/character?status=alive&species=human&gender=
 | **Terracotta**            | 🧡     | `#E2725B`  |
 | **Blu Petrolio Profondo** | 💙     | `#2C3E50`  |
 | **Avorio Polveroso**      | 🤍     | `#F3EFE4`  |
+| **Verde Salvia**          | 🌿     | `#9CAF88`  |
 
 Note: Il testo del luogo e il sottotitolo hanno una opacità del 30%.
